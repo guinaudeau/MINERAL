@@ -41,88 +41,81 @@
 
   <!-- Contenu principal -->
   <main class="container">
-  <h2 id="titre-page">Offres de poste</h2>
+    <h2 id="titre-page">Offres de poste</h2>
 
-  <!-- SECTION FRANÇAISE -->
-  <section id="offre-fr">
-    <h3>Liste des offres de poste</h3>
-    <table border="1" cellpadding="10" cellspacing="0">
-      <thead>
-        <tr>
-          <th>Titre du poste</th>
-          <th>Durée</th>
-          <th>Lieu</th>
-          <th>Financement</th>
-          <th>Profil recherché</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Stage : Modélisation des actes de communication dans les documents audiovisuels</td>
-          <td>5 à 6 mois</td>
-          <td>LISN, équipe LIPS</td>
-          <td>≈ 600€/mois</td>
-          <td>Master 2 en informatique, Deep Learning, traitement d’images (optionnel)</td>
-        </tr>
-        <tr>
-          <td colspan="5" style="text-align: center; font-style: italic;">Prochaine offre à venir...</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+    <!-- SECTION FRANÇAISE -->
+    <section id="offre-fr">
+      <h3>Liste des offres de poste</h3>
+      <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Titre du poste</th>
+            <th>Durée</th>
+            <th>Lieu</th>
+            <th>Financement</th>
+            <th>Profil recherché</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Stage : Modélisation des actes de communication dans les documents audiovisuels</td>
+            <td>5 à 6 mois</td>
+            <td>LISN, équipe LIPS</td>
+            <td>≈ 600€/mois</td>
+            <td>Master 2 en informatique, Deep Learning, traitement d’images (optionnel)</td>
+            <td><a href="mailto:guinaudeau@lisn.fr?subject=Candidature%20-%20Stage%20Mod%C3%A9lisation%20des%20actes">Envoyer</a></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="text-align: center; font-style: italic;">Prochaine offre à venir...</td>
+          </tr>
+          <tr>
+            <td colspan="6" style="text-align: center; font-style: italic;">Prochaine offre à venir...</td>
+          </tr>
+          <tr>
+            <td colspan="6" style="text-align: center; font-style: italic;">Prochaine offre à venir...</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-  <!-- SECTION ANGLAISE (cachée par défaut) -->
-  <section id="offre-en" style="display: none;">
-    <h3>Job Opportunities</h3>
-    <table border="1" cellpadding="10" cellspacing="0">
-      <thead>
-        <tr>
-          <th>Position Title</th>
-          <th>Duration</th>
-          <th>Location</th>
-          <th>Funding</th>
-          <th>Required Profile</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Internship: Communicative Acts Modeling in Audiovisual Documents</td>
-          <td>5 to 6 months</td>
-          <td>LISN, LIPS team</td>
-          <td>≈ €600/month</td>
-          <td>Master’s in Computer Science, Deep Learning, Image Processing (optional)</td>
-        </tr>
-        <tr>
-          <td colspan="5" style="text-align: center; font-style: italic;">Next offer coming soon...</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+    <!-- SECTION ANGLAISE (cachée par défaut) -->
+    <section id="offre-en" style="display: none;">
+      <h3>Job Opportunities</h3>
+      <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Position Title</th>
+            <th>Duration</th>
+            <th>Location</th>
+            <th>Funding</th>
+            <th>Required Profile</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Internship: Communicative Acts Modeling in Audiovisual Documents</td>
+            <td>5 to 6 months</td>
+            <td>LISN, LIPS team</td>
+            <td>≈ €600/month</td>
+            <td>Master’s in Computer Science, Deep Learning, Image Processing (optional)</td>
+            <td><a href="mailto:guinaudeau@lisn.fr?subject=Application%20-%20Internship%20Communicative%20Acts">Apply</a></td>
+          </tr>
+          <tr>
+            <td colspan="6" style="text-align: center; font-style: italic;">Next offer coming soon...</td>
+          </tr>
+          <tr>
+            <td colspan="6" style="text-align: center; font-style: italic;">Next offer coming soon...</td>
+          </tr>
+          <tr>
+            <td colspan="6" style="text-align: center; font-style: italic;">Next offer coming soon...</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-  <!-- FORMULAIRE UNIQUE POUR LES DEUX LANGUES -->
-  <section class="application-form">
-    <h3 id="form-title">Postuler à une offre</h3>
-    <form action="mailto:guinaudeau@lisn.fr" method="post" enctype="text/plain">
-      <label for="offre">Choisissez l'offre :</label><br />
-      <select id="offre" name="Offre">
-        <option value="Modélisation des actes de communication">Stage : Modélisation des actes de communication</option>
-        <option value="Other">Other (coming soon)</option>
-      </select><br /><br />
-
-      <label for="name">Nom complet / Full Name:</label><br />
-      <input type="text" id="name" name="Nom complet" required /><br /><br />
-
-      <label for="email">Email :</label><br />
-      <input type="email" id="email" name="Email" required /><br /><br />
-
-      <label for="message">Message / Motivation Letter:</label><br />
-      <textarea id="message" name="Message" rows="5" placeholder="Vos motivations / Your motivation..." required></textarea><br /><br />
-
-      <button type="submit">Envoyer la candidature / Send Application</button>
-    </form>
-  </section>
-</main>
-
+  </main>
 
   <!-- Pied de page -->
   <footer>
