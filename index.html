@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MINERAL - Accueil</title>
+  <!-- Lien vers la feuille de style CSS externe -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Lien vers le fichier JavaScript externe, chargé de façon différée -->
+  <script src="script.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="Image/MINERAL-logo-Image.png">
+</head>
+<body>
+  <!-- En-tête de la page -->
+  <header>
+    <div class="container">
+      <div class="header-layout">
+        <div class="logo-title">
+          <!-- Logo et titre du projet, cliquable pour revenir à l'accueil -->
+          <a href="index.html">
+            <img src="Image/MINERAL-logo-Image.png" alt="Logo MINERAL" class="logo-mineral">
+          </a>
+          <h1 style="color:#002b45">MINERAL</h1>
+        </div>
+          <!-- <h2>Représentation multi dimensionnelle pour la modélisation des conversations</h2> -->
+        <!-- Menu de navigation principal -->
+        <nav>
+          <ul class="nav-links">
+            <li><a class="nav-links" href="index.html">Accueil</a></li>
+            <li><a class="nav-links" href="partenaires.html">Partenaires</a></li>
+            <li><a class="nav-links" href="publications.html">Publications</a></li>
+            <li><a class="nav-links" href="contact.html" class="active">Contact</a></li>
+            <li><a class="nav-links" href="offres de poste.html">Offres de poste</a></li>
+            <!-- Sélecteur de langue -->
+            <li>
+              <select id="language-select" onchange="changeLanguage()">
+                <option value="fr">FR</option>
+                <option value="en">EN</option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenu principal de la page -->
+  <main class="container">
+    <!-- Bloc d'accueil en français -->
+    <div id="home-fr">
+      <section>
+        <h1 style="color:#002b45" id="welcome-fr">Représentation multi dimensionnelle pour la modélisation des conversations</h1>
+        <article id="description-fr">
+      <!-- Paragraphe introductif sur les objectifs généraux du projet -->
+      <p>
+        Le traitement automatique des conversations humaines pose d'importants défis en raison de leur nature multimodale et dynamique.
+        Le projet MINERAL vise à améliorer la compréhension des situations conversationnelles en abordant des problématiques clés :
+        exploiter les indices non verbaux, intégrer l'ancrage sémantique et comprendre la structure discursive dynamique.
+        Situé à l'intersection des modalités textuelles, audio et visuelles, le projet MINERAL s'appuie sur des travaux sur la compréhension de conversations
+        tout en se concentrant sur le domaine largement inexploré de l'analyse conversationnelle multimodale.
+      </p>
+      <!-- Paragraphe expliquant le premier objectif du projet -->
+      <p>
+        En exploitant des ensembles de données incluant des données télévisuelles et des réunions multipartites,
+        le premier objectif du projet MINERAL consiste à développer des modèles capables d'effectuer des analyses contextuelles multimodales sémantiques,
+        discursives et pragmatiques des conversations humaines à plusieurs participants.
+        Pour aborder la conversation dans sa globalité, nous commencerons par caractériser les actes de communication,
+        c'est-à-dire les plus petites unités de communication au sein de la conversation, qui peuvent être verbales ou non verbales,
+        puis étudier la structure communicative, à savoir les relations entre les actes de communication.
+      </p>
+      <!-- Paragraphe expliquant le deuxième objectif : génération automatique de scripts -->
+      <p>
+        Pour évaluer l'efficacité de ces modèles, le deuxième objectif du projet consistera à générer automatiquement un script
+        (sur le modèle de script de film) décrivant le contenu d'une conversation en tenant compte des dimensions sémantiques, discursives et pragmatiques.
+      </p>
+      <!-- Paragraphe sur les cas d'application industriels et scientifiques -->
+      <p>
+        Nous prévoyons d'évaluer la capacité de généralisation de nos modèles dans différents cas d'utilisation,
+        qu'ils soient industriels (résumé de réunion) ou académiques, grâce à la recherche sur le développement socio-cognitif des enfants.
+      </p>
+      <!-- Mention du financement ANR -->
+      <p><strong>Ce projet a été financé par l'Agence Nationale de la Recherche (ANR-24-CE23-4826)</strong></p>
+      <br>
+        </article>
+      </section>
+      <aside id="news-fr">
+  <h1 style="color:#002b45">Actualités</h1>
+  <ul>
+          <li style="color:#002b45"><strong>14/03/2025 :</strong> Lydia Belhoul débute son stage sur la modélisation multimodale des conversations au LISN</li>
+      <li style="color:#002b45"><strong>
+       13/03/2025 :</strong> Participation à la <a href="https://gdr-tal-jcp2025.sciencesconf.org/?lang=fr" target="_blank">journée du club des partenaires</a> du GDR TAL le 13 mars à Cesson-Sévigné :<br>
+  <img src="Image/pdf.png" alt="PDF" style="width: 16px; vertical-align: middle; margin-right: 5px;">
+  <a href="docs/MINERAL_Poster.pdf" target="_blank">Poster MINERAL (PDF)</a><br>
+  <img src="Image/pdf.png" alt="PDF" style="width: 16px; vertical-align: middle; margin-right: 5px;">
+  <a href="docs/PresentationMINERAL-GDR-TAL.pdf" target="_blank">Présentation MINERAL pour le GDR TAL (PDF)</a>
+</li>
+<li style="color:#002b45"><strong>18/01/2025 :</strong> Réunion de lancement du projet ANR MINERAL au LISN</li>
+        </ul>
+</aside>  
+
+
+     
+
+    </div>
+
+    <!-- Bloc d'accueil en anglais (masqué par défaut) -->
+    <div id="home-en" style="display: none;">
+
+
+      <section>
+        <h1 id="welcome-en">Multidimensional representation for conversation modeling</h1>
+        <article id="description-en">
+      <!-- Paragraphe introductif sur les objectifs généraux du projet -->
+      <p>
+        The MINERAL project aims to enhance the understanding of conversational situations by addressing key issues:
+        leveraging non-verbal cues, integrating semantic grounding, and understanding dynamic discourse structure.
+        Positioned at the intersection of textual, audio, and visual modalities,
+        the MINERAL project builds on work in conversation understanding while focusing on the largely unexplored domain of multimodal conversational analysis.
+      </p>
+      <!-- Premier objectif du projet en anglais -->
+      <p>
+        By leveraging datasets including television broadcasts and multi-party meetings,
+        the first objective of the MINERAL project is to develop models capable of performing semantic, discourse, and pragmatic contextual multimodal analysis
+        of multi-party human conversations. To address conversation as a whole, we will begin by characterizing communication acts—
+        the smallest units of communication within a conversation, which may be verbal or non-verbal—then study the communicative structure,
+        i.e., the relationships between these acts.
+      </p>
+      <!-- Deuxième objectif : génération de scripts en anglais -->
+      <p>
+        To assess the effectiveness of these models, the second objective of the project is to automatically generate a script
+        (in the style of a movie script) describing the content of a conversation, taking into account semantic, discourse, and pragmatic dimensions.
+      </p>
+      <!-- Cas d'application du projet en anglais -->
+      <p>
+        We plan to evaluate the generalization capability of our models across various use cases,
+        whether industrial (e.g., meeting summarization) or academic, through research on children's socio-cognitive development.
+      </p>
+      <!-- Mention du financement en anglais -->
+      <p><strong>This project is funded by the French National Research Agency (ANR-24-CE23-4826).</strong></p>
+      <br>
+        </article>
+      </section>
+      <aside id="news-en">
+  <h1>News</h1>
+ <ul>
+          <li><strong>03/14/2025:</strong> Lydia Belhoul starts her internship on multimodal modeling of conversations at LISN</li>
+     <li><strong>
+          03/13/2025:</strong> Attendance at the GDR TAL <a href="https://gdr-tal-jcp2025.sciencesconf.org/?lang=en" target="_blank">Partners' Club Day</a> on March 13 in Cesson-Sévigné:<br>
+  <img src="Image/pdf.png" alt="PDF" style="width: 16px; vertical-align: middle; margin-right: 5px;">
+  <a href="docs/MINERAL_Poster.pdf" target="_blank">MINERAL Poster (PDF)</a><br>
+  <img src="Image/pdf.png" alt="PDF" style="width: 16px; vertical-align: middle; margin-right: 5px;">
+  <a href="docs/PresentationMINERAL-GDR-TAL.pdf" target="_blank">MINERAL Presentation for GDR TAL (PDF)</a>
+</li>
+<li><strong>01/18/2025:</strong> Kick-off meeting of the ANR MINERAL project at LISN</li>
+        </ul>
+</aside>  
+
+    </div>
+ </ul>
+  </main>
+
+  <!-- Pied de page avec logos des partenaires et mention de droits d’auteur -->
+  <footer>
+    <div class="logos">
+      <a href=" https://anr.fr/" target="_blank">
+        <img src="Image/logo-anr.gif" alt="Logo ANR" />
+      </a>
+      <a href=" https://www.lisn.upsaclay.fr/" target="_blank">
+        <img src="Image/LISN-LOGO-PNG.png" alt="Logo LISN" />
+      </a>
+      <a href=" https://www.lis-lab.fr/" target="_blank">
+        <img src="Image/logo-lis-2024.svg" alt="Logo LIS" />
+      </a>
+      <a href=" https://www.orange.com/fr" target="_blank">
+        <img src="Image/Orange-SA-logo.png" alt="Logo Orange" />
+      </a>
+    </div>
+    <p>&copy; 2025 Projet MINERAL</p>
+  </footer>
+
+  <!-- Script JavaScript intégré pour recherche et affichage des FAQ -->
+  <script>
+    // Fonction de recherche dans la FAQ
+    function searchFAQ() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const faqList = document.getElementById("faq-list");
+      const items = faqList.querySelectorAll(".faq-item");
+
+      if (input.trim() === "") {
+        faqList.style.display = "none";
+        items.forEach(item => item.style.display = "none");
+        return;
+      }
+
+      let hasVisible = false;
+      items.forEach(item => {
+        const question = item.querySelector(".faq-question").textContent.toLowerCase();
+        if (question.includes(input)) {
+          item.style.display = "block";
+          hasVisible = true;
+        } else {
+          item.style.display = "none";
+          item.querySelector(".faq-answer").style.display = "none";
+        }
+      });
+
+      faqList.style.display = hasVisible ? "block" : "none";
+    }
+
+    // Fonction pour afficher/masquer une réponse à une question FAQ
+    function toggleAnswer(item) {
+      const answer = item.querySelector(".faq-answer");
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "block";
+      }
+    }
+  </script>
+  
+</body>
+</html>

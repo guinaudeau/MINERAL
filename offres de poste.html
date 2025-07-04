@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="Image/MINERAL-logo-Image.png">
+  <title>Offres de poste - Projet MINERAL</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Menu principal -->
+  <header>
+    <div class="container">
+      <div class="header-layout">
+        <div class="logo-title">
+          <a href="index.html">
+            <img src="Image/MINERAL-logo-Image.png" alt="Logo MINERAL" class="logo-mineral" />
+          </a>
+          <h1 style="color:#002b45">MINERAL</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="partenaires.html">Partenaires</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="offres de poste.html">Offres de poste</a></li>
+            <li>
+              <select id="language-select" onchange="changeLanguage()">
+                <option value="fr">FR</option>
+                <option value="en">EN</option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenu principal -->
+  <main class="container">
+    
+
+    <!-- SECTION FRANÇAISE -->
+    <section id="offre-fr">
+      <h2 id="titre-page" style="color:#002b45">Offres de poste</h2>
+      <details>
+  <summary style="color:#002b45"><strong>Stage M2</strong> - 6 mois - Modélisation des actes de communication dans les documents audiovisuels</summary>
+  <p align="justify" style="color:#002b45">La plupart des interactions humaines se déroulent par le biais de conversations orales. Si ce mode d'interaction semble si naturel et aisé pour les humains, il reste un défi pour les modèles de traitement du langage oral, car la parole conversationnelle soulève des questions cruciales. Premièrement, les informations non verbales peuvent être essentielles à la compréhension d'un message. Par exemple, un visage souriant et une voix joyeuse peuvent aider à détecter l'ironie ou l'humour dans un message. Deuxièmement, l'ancrage visuel entre les participants est souvent nécessaire au cours d'une conversation pour intégrer la posture et la gestuelle, ainsi que les références au monde environnant. Par exemple, un locuteur peut parler d'un objet sur une table et le désigner comme tel en le dessinant avec sa main. Enfin, l'ancrage sémantique entre les participants d'une conversation pour établir une connaissance mutuelle est essentiel pour communiquer entre eux.</p>
+  <p align="justify" style="color:#002b45">Dans ce contexte, le projet MINERAL vise à former un modèle de représentation conversationnelle multimodale pour les actes de communication et à étudier les structures communicatives de la conversation audiovisuelle.</p>
+  <p style="color:#002b45"><strong>Objectifs du stage</strong></p>
+  <p align="justify" style="color:#002b45">Dans le cadre de ce projet, nous proposons un stage de 5 à 6 mois axé sur la modélisation des actes de communication pour les dialogues de films et de séries télévisées. La première étape consistera à étendre une ontologie d'annotation existante pour les actes de communication, initialement conçue pour des corpus audio tels que Switchboard, afin de mieux capturer les informations multimodales. Cette extension intégrera des indices non verbaux tels que les expressions faciales, les gestes et l'ancrage visuel entre les interlocuteurs.</p>
+  <p align="justify" style="color:#002b45">Une fois le cadre d'annotation établi, le stagiaire expérimentera des modèles de langage à grande échelle (MLH) pour automatiser le processus d'annotation. Cela impliquera la conception de stratégies d'incitation et le perfectionnement de modèles multimodaux tels que GPT-4V, Gemini ou LLaVA afin de générer des annotations semi-automatiques pour les dialogues audiovisuels. L'étude comparera différentes approches, notamment l'incitation à plusieurs coups et l'apprentissage par transfert, afin d'évaluer leur efficacité dans la reconnaissance des actes de communication dans différents contextes.</p>
+  <p style="color:#002b45"><strong>Conditions pratiques</strong></p>
+  <p align="justify" style="color:#002b45">Le stage sera financé à hauteur d'environ 600 euros par mois pour une durée de 5 ou 6 mois et se déroulera au LISN au sein de l'équipe LIPS. Ce stage pourra éventuellement être suivi d'un doctorat financé, en fonction des performances et de l'intérêt pour la poursuite des recherches dans ce domaine.</p>
+  <p style="color:#002b45"><strong>Qualifications requises :</strong>
+    <ul>
+      <li>Master (M2) en informatique ou dans un domaine connexe.</li>
+      <li>Expérience avec des frameworks d'apprentissage profond tels que Keras ou PyTorch.</li>
+      <li>Une connaissance du traitement d'images serait un atout.</li>
+    </ul>
+  </p>
+
+  <p style="color:#002b45"><strong>Déposer votre candidature</strong></p>
+  <p align="justify" style="color:#002b45">Pour postuler, déposer votre dossier composé d'un CV, d'une lettre de motivation et de vos notes de M1 et M2</p>
+
+    <form id="contact-form-fr" method="POST" action="mailto:guinaudeau@lisn.fr" enctype="text/plain">
+      <label for="email-fr" style="color:#002b45">Votre adresse mail :</label><br />
+      <input type="email" id="email-fr" name="email" required /><br /><br />
+
+      <label for="avatar" style="color:#002b45">Dossier :</label><br />
+      <input type="file" id="cv" name="cv" accept="file/pdf" required /><br /><br />
+
+      <button type="submit">Envoyer</button><br /><br />
+    </form>
+
+</details>
+
+
+    </section>
+
+    <!-- SECTION ANGLAISE (cachée par défaut) -->
+    <section id="offre-en" style="display: none;">
+      <h2 id="titre-page" style="color:#002b45">Job offering</h2>
+      <details>
+  <summary style="color:#002b45"><strong>M2 Internship</strong> - 6 month - Communicative Acts modeling in Audio-Visual Documents</summary>
+  <p style="color:#002b45" align="justify">Most human interactions occur through spoken conversations. If this interaction mode seems so natural and easy for humans, it remains a challenge for spoken language processing models as conversational speech raises critical issues. First, non-verbal information can be essential to understand a message. For example a smiling face and a joyful voice can help detecting irony or humor in a message. Second, visual grounding between participants is often needed during a conversation to integrate posture and body gesture as well as references to the surrounding world. For example, a speaker can talk about an object on a table and refer to it as this object by designing it with her hand. Finally, semantic grounding between participants of a conversation to establish mutual knowledge is essential for communicating with each other.</p>
+  <p style="color:#002b45" align="justify">In this context, the MINERAL project aims to train a multimodal conversation representation model for communicative acts and to study communicative structures of audiovisual conversation.</p>
+
+  <p style="color:#002b45"><strong>Internship’s objectives</strong></p>
+  <p style="color:#002b45" align="justify">As part of this project, we are offering a 5- to 6-month internship focused on communicative acts modeling for dialogues from films and TV series. The first step will involve extending an existing annotation ontology for communicative acts, originally designed for audio-only corpora such as Switchboard, to better capture multimodal information. This extension will incorporate non-verbal cues such as facial expressions, gestures, and visual grounding between speakers.</p>
+  <p style="color:#002b45" align="justify">Once the annotation framework is established, the intern will experiment with large language models (LLMs) to automate the annotation process. This will involve designing prompting strategies and fine-tuning multimodal models such as GPT-4V, Gemini, or LLaVA to generate semi-automatic annotations for audiovisual dialogues. The study will compare different approaches, including few-shot prompting and transfer learning, to assess their effectiveness in recognizing communicative acts across different contexts.</p>
+
+  <p style="color:#002b45"><strong>Practicalities</strong></p>
+  <p style="color:#002b45" align="justify">The internship will be funded ~600 euros per month for a duration of 5 or 6 months and will take place at LISN within the LIPS team. This internship can potentially be followed by a funded PhD, based on performance and interest in continuing research in this area.</p>
+  <p style="color:#002b45"><strong>Required Qualifications:</strong>
+    <ul>
+      <li>Master’s degree (M2) in Computer Science or related field.</li>
+      <li>Experience with deep learning frameworks such as Keras or PyTorch.</li>
+      <li>Knowledge of image processing would be an advantage.</li>
+    </ul>
+  </p>
+
+  <p style="color:#002b45"><strong>Send your application</strong></p>
+  <p align="justify" style="color:#002b45">To apply, send your application file composed by your resume, a cover letter and your M1 and M2 transcripts </p>
+
+    <form id="contact-form-fr" method="POST" action="mailto:guinaudeau@lisn.fr" enctype="text/plain">
+      <label for="email-fr" style="color:#002b45">Email address:</label><br />
+      <input type="email" id="email-fr" name="email" required /><br /><br />
+
+      <label for="avatar" style="color:#002b45">Application file:</label><br />
+      <input type="file" id="cv" name="cv" accept="file/pdf" required /><br /><br />
+
+      <button type="submit">Send</button><br /><br />
+    </form>
+
+</details>
+
+
+    </section>
+
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    <div class="logos">
+      <a href="https://anr.fr/" target="_blank">
+        <img src="Image/logo-anr.gif" alt="Logo ANR" />
+      </a>
+      <a href="https://www.lisn.upsaclay.fr/" target="_blank">
+        <img src="Image/LISN-LOGO-PNG.png" alt="Logo LISN" />
+      </a>
+      <a href="https://www.lis-lab.fr/" target="_blank">
+        <img src="Image/logo-lis-2024.svg" alt="Logo LIS" />
+      </a>
+      <a href="https://www.orange.com/fr" target="_blank">
+        <img src="Image/Orange-SA-logo.png" alt="Logo Orange" />
+      </a>
+    </div>
+    <p>&copy; 2025 Projet MINERAL</p>
+  </footer>
+
+</body>
+</html>

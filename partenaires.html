@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MINERAL - Partenaires</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" type="image/x-icon" href="Image/MINERAL-logo-Image.png">
+</head>
+<body>	  
+		  	  
+		  <header>
+		  <div class="container">
+  <div class="header-layout">
+    <div class="logo-title">
+     <a href="index.html">
+          <img src="Image/MINERAL-logo-Image.png" alt="Logo MINERAL" class="logo-mineral">
+        </a>
+      <h1 style="color:#002b45">MINERAL</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="partenaires.html">Partenaires</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="offres de poste.html">Offres de poste</a></li>
+            <select id="language-select" onchange="changeLanguage()">
+              <option value="fr">FR</option>
+              <option value="en">EN</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Contenu en français des partenaires -->
+
+    <div id="partners-fr" class="lang-content">
+      <h1 style="color:#002b45">Partenaires</h1>
+
+      <!-- Partenaire LISN avec ses membres principaux -->
+      <div class="partner_view">
+        <a href="https://www.lisn.upsaclay.fr/" target="_blank" class="partner-link">
+          <img src="Image/LISN-LOGO-PNG.png" alt="Logo LISN" class="partner-logo" width="300" />
+        </a>
+        <p>
+          Le <strong>Laboratoire Interdisciplinaire des Sciences du Numérique</strong> (LISN) est un laboratoire de recherche multidisciplinaire qui réunit des chercheurs issus de différentes disciplines des sciences de l’ingénieur et de l’information, ainsi que des sciences de la vie et des sciences humaines et sociales. Il possède une expertise reconnue en traitement automatique des langues et de la parole. En plus de la coordinatrice du projet, <strong>Camille Guinaudeau</strong>, trois membres du LISN seront impliqués dans le projet : <strong>Sahar Ghannay</strong>, maîtresse de conférences, est spécialisée en traitement de la parole ; <strong>Sophie Rosset</strong>, directrice de recherche, travaille sur la modélisation du dialogue et l’apprentissage continu ; <strong>Cyril Grouin</strong>, ingénieur de recherche, se consacre à l’extraction d’information à partir de documents textuels.</p>
+        </div>
+
+      <!-- Partenaire LIS avec son équipe TALEP -->
+      <div class="partner_view">
+        <p>Le <strong>Laboratoire d'Informatique des Systèmes</strong> (LIS) est une unité mixte de recherche (UMR) du CNRS et de l’Université d’Aix-Marseille, spécialisée en informatique fondamentale, science des données, systèmes, traitement du signal et des images. Au sein du LIS, l’équipe TALEP compte une vingtaine de membres travaillant sur le traitement automatique de la parole et du langage, avec de nombreuses contributions en compréhension et génération du langage, notamment appliquées aux sciences cognitives. TALEP fait partie de l’Institut pour la Communication du Langage et le Cerveau (ILCB), un institut de convergence pluridisciplinaire financé par l’ANR, offrant un écosystème très favorable au projet. <strong>Benoît Favre</strong>, professeur des universités, assurera la coordination scientifique pour le LIS. Ses recherches portent sur le traitement du langage naturel multimodal, incluant la parole et l’image ; <strong>Frédéric Béchet</strong>, également professeur des universités, est spécialiste du traitement et de la génération de conversations orales ; <strong>Abdellah Fourtassi</strong>, maître de conférences, travaille sur le traitement multimodal du langage appliqué aux sciences cognitives.</p>
+        <a href="https://www.lis-lab.fr/" target="_blank" class="partner-link">
+          <img src="Image/logo-lis-2024.svg" alt="Logo LIS" class="partner-logo"  width="200" />
+        </a>
+      </div>
+      
+      <!-- Partenaire Orange Innovation avec les chercheurs clés -->
+      <div class="partner_view">
+        <a href="https://www.orange.com/fr" target="_blank" class="partner-link">
+          <img src="Image/Orange-SA-logo.png" alt="Logo Orange" class="partner-logo"  width="300" />
+        </a> 
+        <p>Au sein d’<strong>Orange Innovation</strong>, DATA&AI porte l’ambition du groupe Orange de placer l’intelligence artificielle au cœur de sa stratégie d’innovation. Le département AITT de DATA&AI regroupe plusieurs équipes menant des recherches sur le traitement du langage et du dialogue (à Lannion) ainsi que sur le traitement de la parole (à Rennes). <strong>Géraldine Damnati</strong>, chercheuse, assurera la coordination du projet pour Orange. Ses domaines de recherche incluent la compréhension du langage oral, l’analyse sémantique, le text and speech mining et l’extraction d’information. Elle a récemment participé à une tâche partagée sur la génération automatique de comptes-rendus de réunions et co-encadré avec Frédéric Béchet une thèse sur la compréhension du langage oral. <strong>Anastasia Shimorina</strong> est chercheuse, spécialisée en génération automatique de textes à partir de données et en évaluation. Elle a pris part à l’organisation de plusieurs tâches partagées sur la génération de langage naturel. <strong>Gwénolé Lecorvé</strong>, chercheur chez Orange, est spécialiste de la modélisation du langage et de la réponse à des questions, en particulier dans des contextes conversationnels.</p>
+      </div>
+    </div>
+
+    <!-- Contenu en anglais des partenaires (caché par défaut) -->
+    
+    <div id="partners-en" class="lang-content" style="display: none;">
+      <h1>Partners</h1>
+
+      <!-- Partenaire LISN avec ses membres principaux -->
+      <div class="partner_view">
+        <a href="https://www.lisn.upsaclay.fr/" target="_blank" class="partner-link">
+          <img src="Image/LISN-LOGO-PNG.png" alt="Logo LISN" class="partner-logo" width="300" />
+        </a>
+        <p>
+          The <strong>Laboratoire Interdisciplinaire des Sciences du Numérique</strong> (LISN) is a multidisciplinary research laboratory that brings together researchers from different disciplines in the Engineering and Information Sciences, as well as Life Sciences and Human and Social Sciences. It has a strong expertise in Natural Language and Speech Processing. Apart from the project coordinator, <strong>Camille Guinaudeau</strong>, 3 LISN’s members will be involved in the project. <strong>Sahar Ghannay</strong>, assistant professor, is specialized in speech processing, <strong>Sophie Rosset</strong>, research director, focuses on dialogue modeling and continuous learning and <strong>Cyril Grouin</strong>, research engineer, works on information extraction from textual documents.</p>
+      </div>
+
+    
+      <!-- Partenaire LIS avec son équipe TALEP -->
+      <div class="partner_view">
+        <p>The <strong>Laboratoire d'Informatique des Systèmes</strong> (LIS) is a joint research unit (UMR) from CNRS and Aix-Marseille University, specialized on core computer science, data science, systems and signal and image processing. Within LIS, the TALEP team counts about 20 members who work on natural speech and language processing with a solid track record of contributions to language understanding and generation, notably applied to cognitive sciences. TALEP is part of the Institute for Language Communication and the Brain (ILCB), a pluridisciplinary convergence institute funded by ANR, source of a very favorable ecosystem for the project. <strong>Benoît Favre</strong>, university professor, will ensure the scientific coordination for LIS. His research focuses on multimodal natural language processing, including speech and image modalities ; <strong>Frédéric Béchet</strong>, university professor, specializes in spoken conversation processing and generation ; <strong>Abdellah Fourtassi</strong>, assistant professor, works on multimodal language processing for cognitive sciences.</p>
+        <a href="https://www.lis-lab.fr/" target="_blank" class="partner-link">
+          <img src="Image/logo-lis-2024.svg" alt="Logo LIS" class="partner-logo"  width="200" />
+        </a>
+      </div>
+      
+      <!-- Partenaire Orange Innovation avec les chercheurs clés -->
+      <div class="partner_view">
+        <a href="https://www.orange.com/fr" target="_blank" class="partner-link">
+          <img src="Image/Orange-SA-logo.png" alt="Logo Orange" class="partner-logo"  width="300" />
+        </a>
+        <p>Within <strong>Orange Innovation</strong>, DATA&AI carries Orange Group’s ambition to place Artificial Intelligence at the heart of its innovation strategy. The AITT department of DATA&AI brings together several teams involved in research on Language and Dialogue Processing (in Lannion) and Speech Processing (in Rennes). <strong>Géraldine Damnati</strong>, researcher, will ensure the project coordination for Orange. Her research interests include Spoken Language Understanding, Text and Speech Mining, Semantic Analysis and Information Extraction in general. She has recently participated to a shared task on Automatic Meeting Minute Generation and co-supervised with <strong>Frédéric Béchet</strong> a PhD thesis on Spoken Language Understanding. <strong>Anastasia Shimorina</strong> is a researcher. Her research focuses on data-to-text generation and evaluation. She has been involved in the organization of several shared-tasks on Natural Language Generation. <strong>Gwénolé Lecorvé</strong>, researcher at Orange, specializes in language modeling and question answering, especially in conversational settings.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="logos">
+	<a href=" https://anr.fr/" target="_blank">
+      <img src="Image/logo-anr.gif" alt="Logo ANR" />
+	  </a>
+	  
+	  <a href=" https://www.lisn.upsaclay.fr/" target="_blank">
+      <img src="Image/LISN-LOGO-PNG.png" alt="Logo LISN" />
+	  </a>
+	  
+	  <a href=" https://www.lis-lab.fr/" target="_blank">
+      <img src="Image/logo-lis-2024.svg" alt="Logo LIS" />
+	  </a>
+	  
+	  <a href=" https://www.orange.com/fr" target="_blank">
+      <img src="Image/Orange-SA-logo.png" alt="Logo Orange" />
+	  </a>
+    </div>
+    <p>&copy; 2025 Projet MINERAL</p>
+  </footer>
+</body>
+</html>
